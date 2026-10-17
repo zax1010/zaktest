@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="serviceContact.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="header">
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="PetNet-home">
+            <img src="img/logo.png" alt="PetNet" class="petnet-img">
+            <a href="#acceuil" class="link-PetNet">
+                PetNet
+            </a>
+        </div>
+        <nav class="nav">
+            <div class="a-nav">
+                <ul class="ul-nav">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="catalogue.html">Boutique</a></li>
+                    <li><a href="adoption.html">Adoption</a></li>
+                    <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html" class="active-link">Contact</a></li>
+                </ul>
+                <div class="button">
+                    <a class="button-a product-button" style="padding: 10px;">Prendre RDV</a>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <main class="contact">
+        <section>
+            <h1>Prendre rendez-vous</h1>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom complet *</label>
+                        <input type="text" id="nom" name="nom" placeholder="Ex. Sara Benali" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="service">Service *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Choisir un service</option>
+                            <option value="Toilettage">Toilettage</option>
+                            <option value="Veterinaire">Consultation</option>
+                            <option value="Pension">Pension</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Date souhaitée *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message"
+                        placeholder="Race, taille et besoins particuliers de votre animal..." required></textarea>
+                </div>
+                <button type="submit">
+                    Envoyer la demande
+                </button>
+            </form>
+        </section>
+        <aside>
+            <div class="info">
+                <h2>La boutique</h2>
+                <p>12 rue des Lilas, Casablanca</p>
+                <p>05 22 00 00 00</p>
+                <p>bonjour@petnest.ma</p>
+                <p>Lundi - samedi : 9 h - 19 h</p>
+            </div>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.7043753606877!2d-9.23778852442977!3d32.29292517386964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYouCode%20Safi!5e0!3m2!1sfr!2sma!4v1792159926412!5m2!1sfr!2sma"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            <div class="social">
+                <h2>Suivez-nous</h2>
+
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                    Instagram
+                </a>
+
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                    YouTube
+                </a>
+            </div>
+        </aside>
+
+    </main>
+    <footer class="pied-de-page ">
+        <div class="conteneur">
+            <div class="pied-haut">
+                <div class="rest">
+                    <H2><img src="img/logo.png" id="logo1">PetNet </H2>
+                    <p id="disc">Produits, adoption responsable et services pour le bien-être de vos animaux.
+                    <p>
+                    <div class="media">
+                        <i class="fa-brands fa-instagram" style="color: rgb(242, 246, 245);"></i>
+                        <i class="fa-brands fa-youtube" style="color: rgb(242, 246, 245);"></i>
+                        <i class="fa-solid fa-share-nodes" style="color: rgb(242, 246, 245);"></i>
+                    </div>
+                </div>
+
+                <div class="boutique">
+                    <H1>boutique</H1>
+                    <p>chiens</p>
+                    <p>chats</p>
+                    <p>Rongeurs</p>
+                    <p>Oiseaux</p>
+                    <p>poissons</p>
+                </div>
+                <div class="Aide">
+                    <H1>Aide</H1>
+                    <p>FAQ</p>
+                    <p>Livraison</p>
+                    <p>Retours</p>
+                    <p>Conditions generales</p>
+                </div>
+                <div>
+                    <h1>Contact</h1>
+                    <p id="location"> <i class="fa-solid fa-location-crosshairs"
+                            style="color: rgb(13, 148, 136);"></i>12 rue des
+                        Lilas, Casablanca</p>
+                    <p id=call><i class="fa-solid fa-phone" style="color: rgb(13, 148, 136);"></i> 05 44 22 88
+                        55</p>
+                    <p id="mail"><i class="fa-solid fa-envelope" style="color: rgb(13, 148, 136);"></i>
+                        bonjour@petnest.ma</p>
+                    <p><i class="fa-solid fa-clock" style="color: rgb(13, 148, 136);"></i> Lun – Sam : 9 h – 19
+                        h</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="pied-bas">
+            <p>© 2026 PetNest. Tous droits réservés.</p>
+        </div>
+        </div>
+    </footer>
+    <script>
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.ul-nav');
+        const button = document.querySelector('.a-nav .button');
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('ouvert');
+            button.classList.toggle('ouvert');
+            burger.classList.toggle('actif');
+        });
+    </script>
+</body>
+
+</html>

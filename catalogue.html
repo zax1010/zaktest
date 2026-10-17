@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetNet</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalogue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<body>
+    <header class="header">
+        <div class="PetNet-home">
+            <img src="img/logo.png" alt="PetNet" class="petnet-img">
+            <a href="#acceuil" class="link-PetNet">
+                PetNet
+            </a>
+        </div>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav">
+            <div class="a-nav">
+                <ul class="ul-nav">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="catalogue.html" class="active-link">Boutique</a></li>
+                    <li><a href="adoption.html">Adoption</a></li>
+                    <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <div class="button">
+                    <a class="button-a">Prendre RDV</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="banner">
+        <h1>Boutique — Chiens</h1>
+        <p>Alimentation, accessoires, hygiène et jouets sélectionnés par notre équipe.</p>
+    </div>
+
+    <div class="title">
+        <h2>Animale</h2>
+    </div>
+    <main>
+
+
+        <div class="filter">
+            <div class="filter_buttons">
+                <button class="active" data-name="touts">touts</button>
+                <button data-name="chiens">chiens</button>
+                <button data-name="chats">chats</button>
+                <button data-name="Rongeurs">Rongeurs</button>
+                <button data-name="Oiseaux">Oiseaux</button>
+                <button data-name="poissons">poissons</button>
+                <p>Prix</p>
+                <input class="test" type="range" />
+                <div class="prix">
+                    <h4>0</h4>
+                    <h4>100</h4>
+                </div>
+
+            </div>
+            <div class="filter-container">
+                <h2>6 produits affichés (aria-live)</h2>
+
+                <div class="edit">
+                    <label for="animalCh">Trier par</label>
+                    <div class="select-wrapper" id="animalCh">
+                        <select name="boutique" id="boutique" required>
+                            <option value="price-asc">Prix croissant</option>
+                            <option value="price-desc">Prix décroissant</option>
+                            <option value="popularity">Popularité</option>
+                            <option value="newest">Nouveautés</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="cartes">
+                <article class="carte cart-bouti" data-name="chats">
+                    <a href="details.html"><img src="img/croquet.png" alt="Croquettes saumon & riz"></a>
+
+                    <div>
+                        <h3>Croquettes saumon & riz</h3>
+                        <p class="duree">49.90€</p>
+                        <a href="details.html"><button class="ajoute">Ajouter</button></a>
+                    </div>
+                </article>
+
+                <article class="carte cart-bouti" data-name="chiens">
+                    <a href="details.html"><img src="img/macher.png" alt="Croquettes saumon & riz"></a>
+                    <div>
+                        <h3>Os à mâcher naturels x3</h3>
+                        <p class="duree">8.90€</p>
+                        <a href="details.html"><button class="ajoute">Ajouter</button></a>
+                    </div>
+                </article>
+
+
+                <article class="carte cart-bouti" data-name="chiens">
+                    <a href="details.html"><img src="img/harinas.png" alt="harinas réglable taille M"></a>
+                    <div>
+                        <h3>harinas réglable taille M</h3>
+                        <p class="duree">21.15€</p>
+                        <a href="details.html"><button class="ajoute taha">Ajouter</button></a>
+                    </div>
+                </article>
+
+                <article class="carte cart-bouti" data-name="poissons">
+                    <a href="details.html"><img src="img/poisson.png"
+                            alt="Aquarium poisson Tana LED 80cm noir - Zolux"></a>
+
+                    <div>
+                        <h3>Aquarium poisson Tana LED 80cm noir - Zolux</h3>
+                        <p class="duree">100.90€</p>
+                        <a href="details.html"><button class="ajoute">Ajouter</button></a>
+                    </div>
+                </article>
+
+                <article class="carte cart-bouti" data-name="Oiseaux">
+                    <a href="details.html"><img src="img/parrot.png" alt="Bendable Cotton Bird Rope"></a>
+
+                    <div>
+                        <h3>Bendable Cotton Bird Rope</h3>
+                        <p class="duree">25.00€</p>
+                        <a href="details.html"><button class="ajoute">Ajouter</button></a>
+                    </div>
+                </article>
+
+                <article class="carte cart-bouti" data-name="Rongeurs">
+                    <a href="details.html"><img src="img/rougeurs.png" alt="Rongeurs SurgiMac"></a>
+
+                    <div>
+                        <h3>Rongeurs SurgiMac</h3>
+                        <p class="duree">19.90€</p>
+                        <a href="details.html"><button class="ajoute">Ajouter</button></a>
+                    </div>
+                </article>
+
+                <script src="catalogue.js"></script>
+
+
+            </div>
+
+
+
+
+
+        </div>
+        </div>
+
+        </div>
+        </section>
+
+
+
+
+
+
+
+        <div class="pagination">
+            <a href="">
+                << /a>
+                    <a href="" class="active">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a hred="">4</a>
+                    <a href="">5</a>
+                    <a href="">></a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="pied-de-page ">
+            <div class="conteneur">
+                <div class="pied-haut">
+                    <div class="rest">
+                        <H2><img src="img/logo.png" id="logo1">PetNet </H2>
+                        <p id="disc">Produits, adoption responsable et services pour le bien-être de vos animaux.
+                        <p>
+                        <div class="media">
+                            <i class="fa-brands fa-instagram" style="color: rgb(242, 246, 245);"></i>
+                            <i class="fa-brands fa-youtube" style="color: rgb(242, 246, 245);"></i>
+                            <i class="fa-solid fa-share-nodes" style="color: rgb(242, 246, 245);"></i>
+                        </div>
+                    </div>
+
+                    <div class="boutique">
+                        <H1>boutique</H1>
+                        <p>chiens</p>
+                        <p>chats</p>
+                        <p>Rongeurs</p>
+                        <p>Oiseaux</p>
+                        <p>poissons</p>
+                    </div>
+                    <div class="Aide">
+                        <H1>Aide</H1>
+                        <p>FAQ</p>
+                        <p>Livraison</p>
+                        <p>Retours</p>
+                        <p>Conditions generales</p>
+                    </div>
+                    <div>
+                        <h1>Contact</h1>
+                        <p id="location"> <i class="fa-solid fa-location-crosshairs"
+                                style="color: rgb(13, 148, 136);"></i>12 rue des Lilas, Casablanca</p>
+                        <p id=call><i class="fa-solid fa-phone" style="color: rgb(13, 148, 136);"></i> 05 44 22 88
+                            55</p>
+                        <p id="mail"><i class="fa-solid fa-envelope" style="color: rgb(13, 148, 136);"></i>
+                            bonjour@petnest.ma</p>
+                        <p><i class="fa-solid fa-clock" style="color: rgb(13, 148, 136);"></i> Lun – Sam : 9 h – 19
+                            h</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="pied-bas">
+                <p>© 2026 PetNest. Tous droits réservés.</p>
+            </div>
+            </div>
+        </footer>
+
+        <script>
+            const burger = document.querySelector('.burger');
+            const menu = document.querySelector('.ul-nav');
+            const button = document.querySelector('.a-nav .button');
+            burger.addEventListener('click', () => {
+                menu.classList.toggle('ouvert');
+                button.classList.toggle('ouvert');
+                burger.classList.toggle('actif');
+            });
+        </script>
+
+</body>
+
+</html>
